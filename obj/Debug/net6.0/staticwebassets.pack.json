@@ -1,0 +1,217 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\images\\390ef5f7-5241-401b-9381-a4cc50de91a4_CheckedShirt.jpg",
+      "PackagePath": "staticwebassets\\images\\390ef5f7-5241-401b-9381-a4cc50de91a4_CheckedShirt.jpg"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\images\\8fb9d234-0d1f-469f-909c-46e6ad7a9d8e_BlackShirt.jpg",
+      "PackagePath": "staticwebassets\\images\\8fb9d234-0d1f-469f-909c-46e6ad7a9d8e_BlackShirt.jpg"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\images\\9a0b8232-2f54-438d-b033-efefbe8462ca_captaincool.jpg",
+      "PackagePath": "staticwebassets\\images\\9a0b8232-2f54-438d-b033-efefbe8462ca_captaincool.jpg"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\images\\a2b43ce4-97a8-47f2-85a1-bd12c5e8e167_CheckedShirt.jpg",
+      "PackagePath": "staticwebassets\\images\\a2b43ce4-97a8-47f2-85a1-bd12c5e8e167_CheckedShirt.jpg"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\images\\abaa7af4-14a1-44df-a292-090fd073578a_BlackShirt.jpg",
+      "PackagePath": "staticwebassets\\images\\abaa7af4-14a1-44df-a292-090fd073578a_BlackShirt.jpg"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\images\\d65d6f86-1711-42a0-82b2-9778644637fc_KingKohli.jpg",
+      "PackagePath": "staticwebassets\\images\\d65d6f86-1711-42a0-82b2-9778644637fc_KingKohli.jpg"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\images\\dc419220-455a-44c2-b7bf-10c9a78e7b1a_BlackShirt.jpg",
+      "PackagePath": "staticwebassets\\images\\dc419220-455a-44c2-b7bf-10c9a78e7b1a_BlackShirt.jpg"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\images\\dceb0031-b0a5-4175-8cbb-84df55d66d10_BlackShirt.jpg",
+      "PackagePath": "staticwebassets\\images\\dceb0031-b0a5-4175-8cbb-84df55d66d10_BlackShirt.jpg"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\images\\dfdcaab0-452c-4951-bd4b-240944c97d82_CheckedShirt.jpg",
+      "PackagePath": "staticwebassets\\images\\dfdcaab0-452c-4951-bd4b-240944c97d82_CheckedShirt.jpg"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\images\\e5304344-f9ed-4e67-8f83-b2b7056f1dcb_BlackShirt.jpg",
+      "PackagePath": "staticwebassets\\images\\e5304344-f9ed-4e67-8f83-b2b7056f1dcb_BlackShirt.jpg"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\images\\ff74a651-48fa-402a-acbb-0fbfcb21f0ba_noimage.png",
+      "PackagePath": "staticwebassets\\images\\ff74a651-48fa-402a-acbb-0fbfcb21f0ba_noimage.png"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\images\\noimage.png",
+      "PackagePath": "staticwebassets\\images\\noimage.png"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\images\\shoppingcart.png",
+      "PackagePath": "staticwebassets\\images\\shoppingcart.png"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\Development Software\\PurchageOrder\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.InventoryBeginners.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.InventoryBeginners.props",
+      "PackagePath": "build\\InventoryBeginners.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.InventoryBeginners.props",
+      "PackagePath": "buildMultiTargeting\\InventoryBeginners.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.InventoryBeginners.props",
+      "PackagePath": "buildTransitive\\InventoryBeginners.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
