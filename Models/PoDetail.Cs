@@ -17,7 +17,7 @@
 
         public virtual Product  Product { get; private set; }
 
-        [Column(TypeName = "smallmoney")]
+        [Column(TypeName = "decimal(18, 2)")]
         [Required]
         [Range(1,1000,ErrorMessage ="Quantity should be greater than 0 and less than 1000")]
         public decimal Quantity { get; set; }
@@ -25,13 +25,13 @@
 
         [Range(1, 10000000, ErrorMessage = "FOB should be greater than 0")]
         [DisplayFormat(DataFormatString = "{0:0.000}", ApplyFormatInEditMode = true)]
-        [Column(TypeName = "smallmoney")]
+        [Column(TypeName = "decimal(18, 2)")]
         [Required]
         public decimal Fob { get; set; }
 
         [Range(1, 10000000, ErrorMessage = "Price should be greater than 0")]
         [DisplayFormat(DataFormatString = "{0:0.000}", ApplyFormatInEditMode = true)]
-        [Column(TypeName = "smallmoney")]
+        [Column(TypeName = "decimal(18, 2)")]
         [Required]
         public decimal PrcInBaseCur { get; set; }
         

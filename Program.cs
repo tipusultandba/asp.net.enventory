@@ -22,6 +22,7 @@ global using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 global using Microsoft.AspNetCore.Http;
 global using System.ComponentModel.DataAnnotations.Schema;
 global using Microsoft.AspNetCore.Identity;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
 
 
@@ -29,6 +30,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using InventoryBeginners.Repositories;
+using System.Configuration;
+using Microsoft.Extensions.Configuration;
 
 
 
@@ -56,7 +59,14 @@ builder.Services.AddScoped<IPurchaseOrder, PurchaseOrderRepo>();
 
 //services.AddScoped<IProductAttribute, ProductAttributeRepo>();
 
-builder.Services.AddDbContext<InventoryContext>(options => options.UseSqlServer(builder.Configuration.GetSection("ConnectionStrings:dbconn").Value));
+//builder.Services.AddDbContext<InventoryContext>(options =>
+//options.UseSqlServer(builder.Configuration.GetSection("ConnectionStrings:dbconn").Value));
+
+builder.Services.AddDbContext<InventoryContext>(options =>
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("dbconn"),
+        new MariaDbServerVersion(new Version(10, 4, 32)) // <-- use MariaDB version here
+    ));
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<InventoryContext>();

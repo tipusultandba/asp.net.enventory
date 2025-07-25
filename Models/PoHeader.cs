@@ -32,11 +32,11 @@
         public virtual Currency POCurrency { get; private set; }
 
         [DisplayFormat(DataFormatString = "{0:0.000}", ApplyFormatInEditMode = true)]
-        [Column(TypeName = "smallmoney")]
+        [Column(TypeName = "decimal(18, 2)")]
         [Required]
         public decimal ExchangeRate { get; set; }
 
-        [Column(TypeName = "smallmoney")]
+        [Column(TypeName = "decimal(18, 2)")]
         [Required]
         public decimal DiscountPercent { get; set; }
 

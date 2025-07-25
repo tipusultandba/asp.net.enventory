@@ -16,12 +16,13 @@
         [StringLength(255)]
         public String Description { get; set; }
 
-        [Required]         
-        [Column(TypeName ="smallmoney")]
+        [Required]
+        [Column(TypeName = "decimal(18, 2)")]
+
         public decimal Cost { get; set; }
 
         [Required]
-        [Column(TypeName = "smallmoney")]
+        [Column(TypeName = "decimal(18, 2)")]
         public decimal Price { get; set; }
 
         [Required]
