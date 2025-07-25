@@ -17,7 +17,7 @@ builder.Services.AddDbContext<InventoryContext>(options =>
     }
   },
     "ConnectionStrings": {
-        "DbConn": "server=localhost;database=inventorydb;user=root;password=root123;"
+        "DbConn": "server=192.168.126.153;database=inventorydb;user=Tipu;password=Tipu@123;"
     },
     "AllowedHosts": "*"
   }
