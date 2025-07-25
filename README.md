@@ -21,3 +21,13 @@ builder.Services.AddDbContext<InventoryContext>(options =>
     },
     "AllowedHosts": "*"
   }
+
+
+  # git pull using ssh
+   git@github.com:tipusultandba/asp.net.enventory.git
+
+
+  cd asp.net.enventory
+
+  docker build -t inventory-app .
+  docker run -d -p 8081:80 --name inventory-container inventory-app
