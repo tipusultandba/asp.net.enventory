@@ -75,6 +75,11 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 
 var app = builder.Build();
 
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<InventoryContext>();
+    dbContext.Database.Migrate();
+}
 
 if (builder.Environment.IsDevelopment())
 {
