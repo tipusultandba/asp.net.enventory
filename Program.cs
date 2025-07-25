@@ -65,7 +65,7 @@ builder.Services.AddScoped<IPurchaseOrder, PurchaseOrderRepo>();
 builder.Services.AddDbContext<InventoryContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("dbconn"),
-        new MariaDbServerVersion(new Version(10, 4, 32)) // <-- use MariaDB version here
+        new MySqlServerVersion(new Version(8, 0, 42)) // <-- use Mysql version here
     ));
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
