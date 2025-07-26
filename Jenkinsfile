@@ -61,8 +61,7 @@ pipeline {
                     withCredentials([usernamePassword(credentialsId: DOCKER_CREDENTIALS_ID, usernameVariable: 'DOCKER_HUB_USER', passwordVariable: 'DOCKER_HUB_PASSWORD')]) {
                         // SSH into the server and deploy the app using Docker Compose
                         sh """
-                       ssh ${SSH_USER}@${DEPLOY_SERVER} <<EOF
-cd ${DEPLOY_PATH}
+                       ssh ${SSH_USER}@${DEPLOY_SERVER} <<EOF 
 echo "${DOCKER_HUB_PASSWORD}" | docker login -u "${DOCKER_HUB_USER}" --password-stdin
           docker pull "${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_TAG}" &&
           docker stop myapp || true &&
