@@ -36,6 +36,20 @@ using Microsoft.Extensions.Configuration;
 
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+var dbHost = Environment.GetEnvironmentVariable("DB_HOST");
+var dbUser = Environment.GetEnvironmentVariable("DB_USER");
+var dbPass = Environment.GetEnvironmentVariable("DB_PASSWORD");
+var dbName = Environment.GetEnvironmentVariable("DB_NAME");
+
+var connectionString = $"server={dbHost};database={dbName};user={dbUser};password={dbPass};";
+
+// Set the connection string in configuration
+builder.Configuration["ConnectionStrings:DbConn"] = connectionString;
+
+
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
@@ -70,18 +84,6 @@ builder.Services.AddDbContext<InventoryContext>(options =>
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<InventoryContext>();
-
-
-var dbHost = Environment.GetEnvironmentVariable("DB_HOST");
-var dbUser = Environment.GetEnvironmentVariable("DB_USER");
-var dbPass = Environment.GetEnvironmentVariable("DB_PASSWORD");
-var dbName = Environment.GetEnvironmentVariable("DB_NAME");
-
-var connectionString = $"server={dbHost};database={dbName};user={dbUser};password={dbPass};";
-
-// Set the connection string in configuration
-builder.Configuration["ConnectionStrings:DbConn"] = connectionString;
-
 
 
 var app = builder.Build();
