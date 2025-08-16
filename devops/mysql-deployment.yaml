@@ -1,0 +1,118 @@
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: mysql-pv
+spec:
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteMany
+  nfs:
+    server: 192.168.126.160       # <-- Replace with your NFS server IP
+    path: /srv/nfs/mysql-data   # <-- Replace with your NFS export path
+  persistentVolumeReclaimPolicy: Retain
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mysql-pvc
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 10Gi
+  volumeName: mysql-pv
+
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: mysql-secret
+type: Opaque
+stringData:
+  MYSQL_ROOT_PASSWORD: "root@123"
+  MYSQL_USER: "Tipu"
+  MYSQL_PASSWORD: "Tipu@123"
+  MYSQL_DATABASE: "accountingDb"
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-init-sql
+data:
+  init-user.sql: |
+    CREATE USER IF NOT EXISTS 'Tipu'@'%' IDENTIFIED BY 'Tipu@123';
+    GRANT ALL PRIVILEGES ON *.* TO 'Tipu'@'%' WITH GRANT OPTION;
+    FLUSH PRIVILEGES;
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mysql
+  template:
+    metadata:
+      labels:
+        app: mysql
+    spec:
+      containers:
+        - name: mysql-container
+          image: mysql:8.0
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: MYSQL_ROOT_PASSWORD
+            - name: MYSQL_USER
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: MYSQL_USER
+            - name: MYSQL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: MYSQL_PASSWORD
+            - name: MYSQL_DATABASE
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: MYSQL_DATABASE
+          ports:
+            - containerPort: 3306
+          volumeMounts:
+            - name: mysql-data
+              mountPath: /var/lib/mysql
+            - name: initdb
+              mountPath: /docker-entrypoint-initdb.d
+      volumes:
+        - name: mysql-data
+          persistentVolumeClaim:
+            claimName: mysql-pvc
+        - name: initdb
+          configMap:
+            name: mysql-init-sql
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql-service
+spec:
+  selector:
+    app: mysql
+  ports:
+    - protocol: TCP
+      port: 3306
+      targetPort: 3306
+  type: ClusterIP
