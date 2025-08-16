@@ -72,6 +72,17 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddEntityFrameworkStores<InventoryContext>();
 
 
+var dbHost = Environment.GetEnvironmentVariable("DB_HOST");
+var dbUser = Environment.GetEnvironmentVariable("DB_USER");
+var dbPass = Environment.GetEnvironmentVariable("DB_PASSWORD");
+var dbName = Environment.GetEnvironmentVariable("DB_NAME");
+
+var connectionString = $"server={dbHost};database={dbName};user={dbUser};password={dbPass};";
+
+// Set the connection string in configuration
+builder.Configuration["ConnectionStrings:DbConn"] = connectionString;
+
+
 
 var app = builder.Build();
 
