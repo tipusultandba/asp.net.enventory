@@ -3,6 +3,7 @@ apiVersion: v1
 kind: PersistentVolume
 metadata:
   name: mysql-pv
+  namespace: aspnetapp
 spec:
   capacity:
     storage: 10Gi
@@ -18,6 +19,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: mysql-pvc
+  namespace: aspnetapp
 spec:
   accessModes:
     - ReadWriteMany
@@ -31,6 +33,7 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: mysql-secret
+  namespace: aspnetapp
 type: Opaque
 stringData:
   MYSQL_ROOT_PASSWORD: "root@123"
@@ -43,6 +46,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: mysql-init-sql
+  namespace: aspnetapp
 data:
   init-user.sql: |
     CREATE USER IF NOT EXISTS 'Tipu'@'%' IDENTIFIED BY 'Tipu@123';
@@ -54,6 +58,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mysql-deploy
+  namespace: aspnetapp
 spec:
   replicas: 1
   selector:
@@ -108,6 +113,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mysql-service
+  namespace: aspnetapp
 spec:
   selector:
     app: mysql
