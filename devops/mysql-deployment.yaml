@@ -30,19 +30,6 @@ spec:
 
 ---
 apiVersion: v1
-kind: Secret
-metadata:
-  name: mysql-secret
-  namespace: aspnetapp
-type: Opaque
-stringData:
-  MYSQL_ROOT_PASSWORD: "root@123"
-  MYSQL_USER: "Tipu"
-  MYSQL_PASSWORD: "Tipu@123"
-  MYSQL_DATABASE: "accountingDb"
-
----
-apiVersion: v1
 kind: ConfigMap
 metadata:
   name: mysql-init-sql
@@ -76,22 +63,22 @@ spec:
             - name: MYSQL_ROOT_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: mysql-secret
+                  name: asp-secret
                   key: MYSQL_ROOT_PASSWORD
             - name: MYSQL_USER
               valueFrom:
                 secretKeyRef:
-                  name: mysql-secret
+                  name: asp-secret
                   key: MYSQL_USER
             - name: MYSQL_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: mysql-secret
+                  name: asp-secret
                   key: MYSQL_PASSWORD
             - name: MYSQL_DATABASE
               valueFrom:
                 secretKeyRef:
-                  name: mysql-secret
+                  name: asp-secret
                   key: MYSQL_DATABASE
           ports:
             - containerPort: 3306
