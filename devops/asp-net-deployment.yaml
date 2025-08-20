@@ -4,7 +4,7 @@ metadata:
   name: inventory-deploy
   namespace: aspnetapp
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: inventoryapp
